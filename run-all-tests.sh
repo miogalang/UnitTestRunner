@@ -6,6 +6,6 @@ curPath=$(pwd)
 
 cd $unitTestPath
 
-mysql-fast-loader.sh "$testDbName" -c "phpunit ."
+mysql-fast-loader.sh $testDbName -c "phpunit ."
 
 cd $curPath
